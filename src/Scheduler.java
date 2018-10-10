@@ -30,15 +30,26 @@ public class Scheduler {
 
 	}
 
-	private static boolean firstScheduleFlag = true;
-
 	public void schedule() {
 
-		if (this.globalTickTime >= 10) {
-			@SuppressWarnings("unused")
-			int dummy = 999;
+		switch (this.schedulingAlgorithm) {
+			case RMS:
+				this.rmsScheduling();
+				break;
+			
+			case EDF:
+				this.edfScheduling();
+				break;
 		}
+	}
+	
+	private void edfScheduling() {
+		
+		
+	}
 
+	private boolean firstScheduleFlag = true;
+	private void rmsScheduling() {
 		if (this.isRMSExceeded() && !firstScheduleFlag) {
 
 			firstScheduleFlag = false;
@@ -137,12 +148,6 @@ public class Scheduler {
 			}
 		}
 
-	}
-
-	// TODO:
-	private boolean isReadyTaskListSorted() {
-		// TODO Auto-generated method stub
-		return false;
 	}
 
 	// Insert task inside the list at the place w.r.t. to its period, smaller the
