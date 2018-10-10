@@ -2,6 +2,9 @@
 
 1. RMS (Rate Monotonic Scheduling): https://en.wikipedia.org/wiki/Rate-monotonic_scheduling
 
+My implementation uses two lists for task scheduling. One is the list with ready processes to be scheduled, and the other list contains waiting processes, that already have been scheduled.
+Processes are sorted in the list in the ascending order with respect to their deadlines (priority).
+
 		 Capacity (Execution time)		  Period
 Task 1			1							4
 Task 2			2							6	
