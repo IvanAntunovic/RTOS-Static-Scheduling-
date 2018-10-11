@@ -13,9 +13,9 @@ Processes are sorted in the list in the ascending order with respect to their de
 | 3		| 3		| 12		|
 | 4		| 4		| 24		|
 
-Result:
-Scheduling Task 1 at time: 0
-Scheduling Task 2 at time: 1
+**Result:**
+- Scheduling Task 1 at time: 0
+- Scheduling Task 2 at time: 1
 Scheduling Task 2 at time: 2
 Scheduling Task 3 at time: 3
 Scheduling Task 1 at time: 4
