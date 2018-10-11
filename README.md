@@ -5,16 +5,13 @@
 My implementation uses two lists for task scheduling. One is the list with ready processes to be scheduled, and the other list contains waiting processes, that already have been scheduled.
 Processes are sorted in the list in the ascending order with respect to their deadlines (priority).
 
-		 Capacity (Execution time)		  Period
-Task 1			1							4
-Task 2			2							6	
-Task 3			3							12
-Task 4			4							24
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| Task  	| Capacity 	| Period	|	
+| ------------- | ------------- | ------------- |
+| 1	  	| 1  		| 4		|	
+| 2  		| 2  		| 6		|
+| 3		| 3		| 12		|
+| 4		| 4		| 24		|
 
 Result:
 Scheduling Task 1 at time: 0
