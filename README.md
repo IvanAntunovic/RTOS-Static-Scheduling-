@@ -11,6 +11,11 @@ Task 2			2							6
 Task 3			3							12
 Task 4			4							24
 
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
 Result:
 Scheduling Task 1 at time: 0
 Scheduling Task 2 at time: 1
