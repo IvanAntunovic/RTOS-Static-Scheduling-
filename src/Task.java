@@ -5,6 +5,7 @@ public class Task implements Comparable {
 	private int period;
 	private int computationTime;
 	private int remainingComputationTime;
+	private int deadLine;
 
 	public Task(int id, int period, int computationTime) {
 		super();
@@ -13,6 +14,19 @@ public class Task implements Comparable {
 		this.computationTime = computationTime;
 		this.remainingComputationTime = computationTime;
 	}
+	
+	
+
+	public Task(int id, int period, int computationTime, int deadLine) {
+		super();
+		this.id = id;
+		this.period = period;
+		this.computationTime = computationTime;
+		this.remainingComputationTime = computationTime;
+		this.deadLine = deadLine;
+	}
+
+
 
 	@Override
 	public int compareTo(Object obj) {
@@ -61,4 +75,12 @@ public class Task implements Comparable {
 		this.remainingComputationTime = remainingComputationTime;
 	}
 
+	public int getDeadLine() {
+		return deadLine;
+	}
+
+	public void setDeadLine(int deadLine) {
+		this.deadLine = deadLine;
+	}
+	
 }
